@@ -13,8 +13,8 @@ const Home = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>Learn without limits</h3>
-                        <p>Programming languages, like human languages, are defined through the use of syntactic and semantic rules, to determine structure and meaning respectively.</p>
+                        <h3 className='home'>Learn without limits</h3>
+                        <p className='home'>Programming languages, like human languages, are defined through the use of syntactic and semantic rules, to determine structure and meaning respectively.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -25,8 +25,8 @@ const Home = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Learn what you want.</h3>
-                        <p>A programming language is an artificial language that can be used to control the behaviour of a machine, particularly a computer. </p>
+                        <h3 className='home'>Learn what you want.</h3>
+                        <p className='home'>A programming language is an artificial language that can be used to control the behaviour of a machine, particularly a computer. </p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -37,8 +37,8 @@ const Home = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Best way to learn</h3>
-                        <p>
+                        <h3 className='home'>Best way to learn</h3>
+                        <p className='home'>
                             Programming languages are used to facilitate communication about the task of organizing and manipulating information, and to express algorithms precisely.
                         </p>
                     </Carousel.Caption>
