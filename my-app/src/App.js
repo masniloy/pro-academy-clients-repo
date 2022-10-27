@@ -7,6 +7,7 @@ import FAQ from './Components/FAQ/FAQ';
 import Home from './Components/Home/Home';
 import Main from './Components/Main/Main';
 import SignIn from './Components/SignIn/SignIn';
+import SignUp from './Components/SignUp/SignUp';
 
 function App() {
   const router = createBrowserRouter([
@@ -41,6 +42,9 @@ function App() {
         },
         {
           path: '/SignIn', element: <SignIn></SignIn>
+        },
+        {
+          path: '/SignUp', element: <SignUp></SignUp>
         },
 
       ]

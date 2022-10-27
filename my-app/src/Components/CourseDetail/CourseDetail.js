@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 
 const CourseDetail = () => {
     const singleData = useLoaderData();
-    const { id, image, name, description, price, tclass } = singleData;
+    const { image, name, description, price, tclass } = singleData;
     return (
         <div className='container mb-5'>
             <h1 className='d-flex justify-content-start'>{name}</h1>
