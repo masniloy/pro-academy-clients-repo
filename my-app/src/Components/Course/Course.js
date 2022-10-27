@@ -20,7 +20,7 @@ const Course = ({ course }) => {
                                     <small className=""><b>{price}</b></small>
                                     <small className="text-muted">Total Class: {tclass}</small>
                                 </div><br />
-                                <Link className='buttons mt-5' to='/Courses'> More Details</Link>
+                                <Link className='buttons mt-5' to={`${id}`}> More Details</Link>
 
                             </Card.Body>
                         </Card>

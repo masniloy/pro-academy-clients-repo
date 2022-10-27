@@ -6,7 +6,7 @@ const Coursel = ({ course }) => {
     const { name, id } = course;
     return (
         <div>
-            <Button to={`${id}`} className='namebt m-2' variant="outline-danger"><Link className='nu mt-5' to={`${id}`}> {name}</Link></Button>{' '}
+            <Button className='namebt m-2' variant="outline-danger"><Link className='nu mt-5' to={`${id}`}> {name}</Link></Button>{' '}
         </div>
     );
 };

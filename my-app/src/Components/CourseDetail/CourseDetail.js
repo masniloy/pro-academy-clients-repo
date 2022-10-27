@@ -3,10 +3,10 @@ import { useLoaderData } from 'react-router-dom';
 
 const CourseDetail = () => {
     const singleData = useLoaderData();
-    console.log(singleData);
+    const { id, } = singleData;
     return (
         <div>
-            <h1>ki jani</h1>
+            <h1>ki jani {id}</h1>
         </div>
     );
 };
