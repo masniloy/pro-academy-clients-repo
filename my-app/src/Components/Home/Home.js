@@ -1,6 +1,8 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
 import './Home.css';
+
 
 const Home = () => {
     return (
@@ -14,7 +16,8 @@ const Home = () => {
                     />
                     <Carousel.Caption>
                         <h3 className='home'>Learn without limits</h3>
-                        <p className='home'>Programming languages, like human languages, are defined through the use of syntactic and semantic rules, to determine structure and meaning respectively.</p>
+                        <p className='home'>Programming languages, are defined through the use of syntactic and semantic rules, to determine structure and meaning.</p>
+                        <Link className='button mt-5' to='/Courses'> Start Learning</Link>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -26,7 +29,8 @@ const Home = () => {
 
                     <Carousel.Caption>
                         <h3 className='home'>Learn what you want.</h3>
-                        <p className='home'>A programming language is an artificial language that can be used to control the behaviour of a machine, particularly a computer. </p>
+                        <p className='home'>A programming language is an artificial language that can be used to control the behaviour of a machine.</p>
+                        <Link className='button mt-5' to='/Courses'> Start Learning</Link>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -39,8 +43,9 @@ const Home = () => {
                     <Carousel.Caption>
                         <h3 className='home'>Best way to learn</h3>
                         <p className='home'>
-                            Programming languages are used to facilitate communication about the task of organizing and manipulating information, and to express algorithms precisely.
+                            Programming are used to facilitate about the task of organizing & manipulating information.
                         </p>
+                        <Link className='button mt-5' to='/Courses'> Start Learning</Link>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
