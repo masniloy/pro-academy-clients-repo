@@ -11,6 +11,15 @@ const Courses = () => {
     return (
         <Container>
             <Row className=''>
+                <Col lg='3' className=''>
+                    <h2 className='mt-2 list'>Course List</h2>
+                    {
+                        courses.map(course => <Coursel
+                            key={course.id}
+                            course={course}
+                        ></Coursel>)
+                    }
+                </Col>
 
                 <Col lg='9'>
                     <Row xs={1} md={3}>
@@ -24,15 +33,7 @@ const Courses = () => {
 
                 </Col>
 
-                <Col lg='3' className=''>
-                    <h2 className='mt-2 list'>Course List</h2>
-                    {
-                        courses.map(course => <Coursel
-                            key={course.id}
-                            course={course}
-                        ></Coursel>)
-                    }
-                </Col>
+
             </Row>
         </Container >
     );
