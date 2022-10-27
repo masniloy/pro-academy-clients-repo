@@ -8,6 +8,13 @@
     background-color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    box-shadow: 0px -10px 30px 0px black;
+    /* position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden; */
+
+
 }
 
 .options :hover {

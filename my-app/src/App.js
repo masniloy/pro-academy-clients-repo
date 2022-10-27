@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './Components/Blog/Blog';
@@ -7,6 +6,7 @@ import Courses from './Components/Courses/Courses';
 import FAQ from './Components/FAQ/FAQ';
 import Home from './Components/Home/Home';
 import Main from './Components/Main/Main';
+import SignIn from './Components/SignIn/SignIn';
 
 function App() {
   const router = createBrowserRouter([
@@ -38,6 +38,9 @@ function App() {
         },
         {
           path: '/FAQ', element: <FAQ></FAQ>
+        },
+        {
+          path: '/SignIn', element: <SignIn></SignIn>
         },
 
       ]

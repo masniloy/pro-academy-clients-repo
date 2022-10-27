@@ -15,7 +15,7 @@ const Course = ({ course }) => {
                         <Card>
                             <Card.Img variant="top" src={image} />
                             <Card.Body>
-                                <Card.Title>{name}</Card.Title>
+                                <Card.Title className='d-flex justify-content-start'>{name}</Card.Title>
                                 <div className='d-flex justify-content-between'>
                                     <small className=""><b>{price}</b></small>
                                     <small className="text-muted">Total Class: {tclass}</small>

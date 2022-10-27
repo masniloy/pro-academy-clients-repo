@@ -7,7 +7,7 @@ const Main = () => {
         <div>
 
             <NavBar></NavBar>
-            <Outlet></Outlet>
+            <Outlet></Outlet><br />
         </div>
     );
 };
