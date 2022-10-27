@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useLoaderData } from 'react-router-dom';
 import Course from '../Course/Course';
+import Coursel from '../Coursel/Coursel';
 
 
 const Courses = () => {
@@ -12,7 +13,6 @@ const Courses = () => {
             <Row className=''>
 
                 <Col lg='9'>
-                    <h2>All Courses</h2>
                     <Row xs={1} md={3}>
                         {
                             courses.map(course => <Course
@@ -22,11 +22,16 @@ const Courses = () => {
                         }
                     </Row>
 
-
                 </Col>
 
-                <Col lg='3'>
-                    <h2>second one</h2>
+                <Col lg='3' className=''>
+                    <h2 className='mt-2 list'>Course List</h2>
+                    {
+                        courses.map(course => <Coursel
+                            key={course.id}
+                            course={course}
+                        ></Coursel>)
+                    }
                 </Col>
             </Row>
         </Container >
