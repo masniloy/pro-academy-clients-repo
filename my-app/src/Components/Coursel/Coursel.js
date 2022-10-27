@@ -1,12 +1,12 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Coursel.css';
-
 const Coursel = ({ course }) => {
-    const { name } = course;
+    const { name, id } = course;
     return (
         <div>
-            <Button className='namebt m-2' variant="outline-danger">{name}</Button>{' '}
+            <Button to={`${id}`} className='namebt m-2' variant="outline-danger"><Link className='nu mt-5' to={`${id}`}> {name}</Link></Button>{' '}
         </div>
     );
 };
