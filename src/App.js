@@ -6,6 +6,8 @@ import Courses from './Components/Courses/Courses';
 import FAQ from './Components/FAQ/FAQ';
 import Home from './Components/Home/Home';
 import Main from './Components/Main/Main';
+import Premium from './Components/Premium/Premium';
+import Private from './Components/Private/Private';
 import SignIn from './Components/SignIn/SignIn';
 import SignUp from './Components/SignUp/SignUp';
 
@@ -45,6 +47,9 @@ function App() {
         },
         {
           path: '/SignUp', element: <SignUp></SignUp>
+        },
+        {
+          path: '/Premium', element: <Private><Premium></Premium></Private>
         },
 
       ]
