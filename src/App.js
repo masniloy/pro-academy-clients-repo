@@ -17,14 +17,14 @@ function App() {
       path: '/', element: <Main></Main>,
       children: [
         {
-          path: '/', element: <Home></Home>
-        },
-        {
           path: '/Courses',
           loader: async () => {
             return fetch('http://localhost:5000/all-data')
           },
           element: <Courses></Courses>
+        },
+        {
+          path: '/', element: <Home></Home>
         },
         {
           path: '/Courses/:id',

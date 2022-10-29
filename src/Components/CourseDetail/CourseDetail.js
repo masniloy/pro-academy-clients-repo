@@ -5,7 +5,7 @@ import Premium from '../Premium/Premium';
 
 const CourseDetail = () => {
     const singleData = useLoaderData();
-    const { image, name, description, price, tclass } = singleData;
+    const { id, image, name, description, price, tclass } = singleData;
     return (
         <div className='container mb-5'>
             <h1 className='d-flex justify-content-start'>{name}</h1>
@@ -19,8 +19,9 @@ const CourseDetail = () => {
 
                 <h4 className="d-flex justify-content-start ps-4"><b>Price: {price}</b></h4>
                 <h6 className="d-flex justify-content-start ps-4 text-muted">Total Class: {tclass}</h6>
-                <Link className='buttons mt-5' to="/Premium"><b> Get Premium $</b></Link>
+                <Link className='buttons mt-5' to={'/Premium'}><b> Get Premium $</b></Link>
             </Card>
+
         </div>
     );
 };
