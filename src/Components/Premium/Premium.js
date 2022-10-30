@@ -3,7 +3,7 @@ const Premium = () => {
 
     return (
         <div>
-            <br /><br /><h3>$ Now you can get the premium...!!</h3>
+            <br /><br /><h3 >$ Now you can get the premium...!!</h3>
         </div>
     );
 };
