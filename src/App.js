@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import For4o4 from './Components/4o4/For4o4';
 import Blog from './Components/Blog/Blog';
 import CourseDetail from './Components/CourseDetail/CourseDetail';
 import Courses from './Components/Courses/Courses';
@@ -50,6 +51,9 @@ function App() {
         },
         {
           path: '/Premium', element: <Private><Premium></Premium></Private>
+        },
+        {
+          path: '*', element: <For4o4></For4o4>
         },
 
       ]

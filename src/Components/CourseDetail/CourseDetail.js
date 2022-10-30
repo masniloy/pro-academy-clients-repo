@@ -5,11 +5,11 @@ import PdfDownload from '../PdfDownload/PdfDownload';
 
 const CourseDetail = () => {
     const singleData = useLoaderData();
-    const { id, image, name, description, price, tclass } = singleData;
+    const { image, name, description, price, tclass } = singleData;
     return (
         <div className='container mb-5' id="downloadpage">
             <h1 className='d-flex justify-content-start'>{name}</h1>
-            <PdfDownload courseid="downloadpage" filename={"courseDetail"}></PdfDownload>
+            <PdfDownload courseid="downloadpage" filename={name}></PdfDownload>
             <Card>
                 <Card.Img variant="top" src={image} />
                 <Card.Body>

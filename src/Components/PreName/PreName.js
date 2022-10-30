@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PreName = ({ course }) => {
-    const { name, id } = course;
+    const { name, } = course;
     return (
         <div>
             <h1>{name}</h1>

@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { Navigate } from 'react-router-dom';
 import { AuthContext } from '../AuthPro/AuthPro';
 
 
