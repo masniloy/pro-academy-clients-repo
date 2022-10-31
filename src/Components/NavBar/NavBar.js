@@ -74,17 +74,18 @@ const NavBar = () => {
                                         : <>
                                             <Link className='options ' variant="primary" to='/SignIn'><h6> Sign In</h6></Link>
                                             <Link className='options ' variant="primary" to='/SignUp'><h6> Sign Up</h6></Link>
+                                            <NavDropdown.Item eventKey="4.2"></NavDropdown.Item>
+                                            <NavDropdown.Item eventKey="4.3"><Button onClick={forGithub} variant="primary" type="button">
+                                                Sign In With GitHub
+                                            </Button></NavDropdown.Item>
+                                            <NavDropdown.Divider />
+                                            <NavDropdown.Item eventKey="4.4"><Button onClick={forGoogle} variant="primary" type="button">
+                                                Sign In With Google
+                                            </Button></NavDropdown.Item>
                                         </>
                                 }
-                            </Link></NavDropdown.Item>
-                            <NavDropdown.Item eventKey="4.2"></NavDropdown.Item>
-                            <NavDropdown.Item eventKey="4.3"><Button onClick={forGithub} variant="primary" type="button">
-                                Sign In With GitHub
-                            </Button></NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item eventKey="4.4"><Button onClick={forGoogle} variant="primary" type="button">
-                                Sign In With Google
-                            </Button></NavDropdown.Item>
+                            </Link>
+                            </NavDropdown.Item>
 
                         </NavDropdown>
 
