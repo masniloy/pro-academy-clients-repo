@@ -20,7 +20,7 @@ function App() {
         {
           path: '/Courses',
           loader: async () => {
-            return fetch('http://localhost:5000/all-data')
+            return fetch('https://b610-lerning-platform-server-side-masniloy.vercel.app/all-data')
           },
           element: <Courses></Courses>
         },
@@ -30,7 +30,7 @@ function App() {
         {
           path: '/Courses/:id',
           loader: async ({ params }) => {
-            return fetch(`http://localhost:5000/singledata/${params.id}`)
+            return fetch(`https://b610-lerning-platform-server-side-masniloy.vercel.app/singleData/${params.id}`)
           },
           element: <CourseDetail></CourseDetail>,
         },

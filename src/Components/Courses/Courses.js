@@ -14,8 +14,8 @@ const Courses = () => {
                 <Col lg='3' className=''>
                     <h2 className='mt-2 list'>Course List</h2>
                     {
-                        courses?.map(course => <Coursel
-                            key={course.id}
+                        courses.map(course => <Coursel
+                            key={course?.id}
                             course={course}
                         ></Coursel>)
                     }
@@ -24,8 +24,8 @@ const Courses = () => {
                 <Col lg='9'>
                     <Row xs={1} md={3}>
                         {
-                            courses?.map(course => <Course
-                                key={course.id}
+                            courses.map(course => <Course
+                                key={course?.id}
                                 course={course}
                             ></Course>)
                         }
